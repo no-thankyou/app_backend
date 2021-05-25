@@ -10,4 +10,4 @@ RUN pipenv install --system --dev
 
 ADD . /app
 
-ENTRYPOINT bash -c "./env/init-branch.sh; python manage.py runserver 0:8000"
+CMD python manage.py runserver 0:8000

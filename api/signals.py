@@ -39,7 +39,6 @@ def create_new_favorite(created, instance, **kwargs):
     event = f'добавить избранное {instance.event.title}'
     analytics = CarrotQuest(user_id=instance.user.id)
     analytics.send_event(event)
-    send_notification(**kwargs)
 
 
 @receiver(post_delete, sender=Favorite)
@@ -49,7 +48,6 @@ def delete_favorite(instance, **kwargs):
 
     analytics = CarrotQuest(user_id=instance.user.id)
     analytics.send_event(event)
-    send_notification(**kwargs)
 
 
 @receiver(post_save, sender=Participation)
@@ -61,4 +59,3 @@ def create_new_participation(created, instance, **kwargs):
     event = f'участие в событии {instance.event.title}'
     analytics = CarrotQuest(user_id=instance.user.id)
     analytics.send_event(event)
-    send_notification(**kwargs)
