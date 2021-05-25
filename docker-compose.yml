@@ -1,0 +1,19 @@
+version: "3.7"
+
+
+services:
+  db:
+    image: postgres:13-alpine
+    env_file:
+      - .env
+
+  backend:
+    build: .
+    ports:
+    - 8000:8000
+    depends_on:
+      - db
+    volumes:
+    - .:/app
+    env_file:
+      - .env
