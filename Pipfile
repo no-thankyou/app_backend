@@ -4,21 +4,22 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pytest = "6.2.1"
-pytest-django = "4.1.0"
-pytest-cov = "2.11.1"
+flake8 = "*"
+pytest = "*"
+pytest-django = "*"
+pytest-cov = "*"
 
 [packages]
-django = "3.1"
-djangorestframework = "3.12"
-psycopg2-binary = "2.8.6"
-pillow = "5.1.0"
-djangorestframework-simplejwt = "4.6.0"
-drf-yasg = "1.20.0"
-django-filter = "2.4.0"
-openpyxl = "3.0.6"
-daphne = "3.0.1"
-django-cors-headers = "3.7.0"
+django = "*"
+djangorestframework = "*"
+psycopg2-binary = "*"
+pillow = "*"
+djangorestframework-simplejwt = "*"
+drf-yasg = "*"
+django-filter = "*"
+openpyxl = "*"
+daphne = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.9"
