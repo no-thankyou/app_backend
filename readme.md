@@ -1,3 +1,4 @@
+!(Build Status)[https://github.com/no-thankyou/app_backend/actions/workflows/github-actions.yml/badge?branch=dev]
 # Backend мобильного приложения
 Проект с бекендом мобильного приложения.
 
