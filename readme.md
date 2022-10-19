@@ -15,7 +15,7 @@ docker-compose run backend python manage.py migrate
 ```
 
 
-#### Initialisation
+#### Initialization
 ```bash
 docker-compose run backend bash /app/env/init-branch.sh
 ```
